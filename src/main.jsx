@@ -3,6 +3,7 @@ import {RouterProvider} from "@tanstack/react-router";
 import router from './router.jsx'
 import ReactDOM from "react-dom/client";
 import './index.css'
+import './instrument.js'
 
 const rootElement = document.getElementById('root')
 
