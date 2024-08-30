@@ -1,9 +1,8 @@
-import { useEffect } from "react";
 import * as Sentry from "@sentry/react";
 import router from './router.jsx'
 
 Sentry.init({
-  dsn: "https://35c030ae2ed74a17865c832e9b019b3c@o912826.ingest.us.sentry.io/4505362630311936",
+  dsn: "https://5ada0b0ea573ab71dac28aadef66636e@o912826.ingest.us.sentry.io/4507866214236160",
 
   integrations: [
     Sentry.tanstackRouterBrowserTracingIntegration(router),
