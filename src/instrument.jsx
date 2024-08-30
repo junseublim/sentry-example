@@ -1,12 +1,17 @@
 import { useEffect } from "react";
 import * as Sentry from "@sentry/react";
+import router from './router.jsx'
 
 Sentry.init({
   dsn: "https://35c030ae2ed74a17865c832e9b019b3c@o912826.ingest.us.sentry.io/4505362630311936",
+
   integrations: [
+    Sentry.tanstackRouterBrowserTracingIntegration(router),
+
     // See docs for support of different versions of variation of react router
     // https://docs.sentry.io/platforms/javascript/guides/react/configuration/integrations/react-router/
     Sentry.replayIntegration(),
+
   ],
 
   // Set tracesSampleRate to 1.0 to capture 100%
